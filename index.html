@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.mask.min.js"></script>
+   <link rel="stylesheet" href="style/style.css">
+   <title>M1-Shop</title>
+</head>
+<body>
+   <div class="main-wrap">
+      <header class="header">
+         <div class="header-top">
+            <div class="container">
+               <div class="header-top-inner">
+                  <div class="header-top__logo">
+                     <a href="#">
+                        <img src="img/logo.png" alt="">
+                     </a>
+                  </div>
+                  <nav class="header-top__menu">
+                     <ul class="header-top__list">
+                        <li class="header-top__item">
+                           <a href="#catalog" class="scroll-to">Каталог</a>
+                        </li>
+                        <li class="header-top__item">
+                           <a href="#fashion" class="scroll-to">Преимущества</a>
+                        </li>
+                        <li class="header-top__item">
+                           <a href="#" class="scroll-to">Отзывы</a>
+                        </li>
+                        <li class="header-top__item">
+                           <a href="#footer" class="scroll-to">Как заказать</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="header-bottom">
+            <div class="container">
+               <div class="header-bottom__title t-light">Женские кожаные портупеи</div>
+               <div class="header-bottom__name">Dr.Harness</div>
+               <div class="header-bottom__text">
+                  <div>Любая модель со скидкой 50%</div>
+                  <div class="t-bold">всего за <span>2990р</span></div>
+               </div>
+               <div class="header-bottom__block-link">
+                  <a href="#every-items" onclick="$('#every-items').trigger('click')" class="t-bold">повседневные портупеи</a>
+                  <a href="#ero-items" onclick="$('#ero-items').trigger('click')" class="t-bold">Эротические портупеи</a>
+               </div>
+            </div>
+            
+         </div>
+      </header>
+      <main class="page-container">
+         <section class="fashion" id="fashion">
+            <div class="container">
+               <h2 class="title fashion__title t-bold">Хит №1 в мире – модные жеские портупеи 2017</h2>
+               <div class="fashion__text">
+                  <p>Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей обладательнице внимание и уверенность в себе.</p>
+                  <p>Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков <br /> для романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и раскрепощенных. </p>
+               </div>
+               
+            </div>
+            <div class="fashion__img">
+               <img src="img/fashion.jpg" alt="">
+            </div>
+         </section>
+         <section class="table">
+            <div class="container">
+               <div class="title title__page">Таблица размеров</div>
+               <div class="table-wrap">
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Международный</th>
+                           <th>XS</th>
+                           <th>S</th>
+                           <th>M</th>
+                           <th>L</th>
+                           <th>XL</th>
+                           <th>XXL</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Росийский</td>
+                           <td>40</td>
+                           <td>42</td>
+                           <td>44/46</td>
+                           <td>48/50</td>
+                           <td>52/54</td>
+                           <td>56</td>
+                        </tr>
+                        <tr>
+                           <td>Бедра (см)</td>
+                           <td>84-92</td>
+                           <td>92-95</td>
+                           <td>96-101</td>
+                           <td>102-108</td>
+                           <td>109-116</td>
+                           <td>117-121</td>
+                        </tr>
+                        <tr>
+                           <td>Бедра (см)</td>
+                           <td>60-65</td>
+                           <td>66-69</td>
+                           <td>70-77</td>
+                           <td>78-85</td>
+                           <td>86-95</td>
+                           <td>96-102</td>
+                        </tr>
+                        <tr>
+                           <td>Грудь (см)</td>
+                           <td>74-80</td>
+                           <td>82-52</td>
+                           <td>86-93</td>
+                           <td>94-102</td>
+                           <td>103-113</td>
+                           <td>114-119</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               
+            </div>
+            
+         </section>
+         <section id="catalog" class="catalog js-tabs-parent">
+            <div class="container">
+               <div class="title">Каталог</div>
+               <div class="catalog-tabs">
+                  <div id="every-items" class="catalog-tabs__item js-tab-caption is-active">повседневные портупеи</div>
+                  <div id="ero-items" class="catalog-tabs__item js-tab-caption">эротичесские портупеи</div>
+               </div>
+               <div class="catalog-tabs-box">
+                  <div class="catalog-tabs__block js-tab-block is-active">
+                     <div class="catalog__list">
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item1.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button class="">заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item2.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Влади”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button>xl</button>
+                                    <button>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    
+                                 </div>
+                                 <div class="catalog-item__price js-active">
+                                    <div class="catalog-item__price--old">5990 р.</div>
+                                    <div class="catalog-item__price--new">3990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item3.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item1.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item2.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Влади”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button>xl</button>
+                                    <button>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    
+                                 </div>
+                                 <div class="catalog-item__price js-active">
+                                    <div class="catalog-item__price--old">5990 р.</div>
+                                    <div class="catalog-item__price--new">3990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item3.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="catalog-tabs__block js-tab-block">
+                     <div class="catalog__list">
+                        
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item2.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Влади”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button>xl</button>
+                                    <button>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    
+                                 </div>
+                                 <div class="catalog-item__price js-active">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item3.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item1.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item2.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Влади”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button>xl</button>
+                                    <button>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    
+                                 </div>
+                                 <div class="catalog-item__price js-active">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item3.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="catalog__item catalog-item">
+                           <div class="catalog-item__inner">
+                              <div class="catalog-item__img">
+                                 <div class="catalog-item__sale">-53%</div>
+                                 <img src="img/catalog/item1.jpg" alt="">
+                              </div>
+                              <div class="catalog-item__info">
+                                 <div class="catalog-item__name">Портупея “Пеппи”</div>
+                                 <div class="catalog-item__size js-active-btn">
+                                    <button>xs</button>
+                                    <button>s</button>
+                                    <button>m</button>
+                                    <button>l</button>
+                                    <button disabled>xl</button>
+                                    <button disabled>xxl</button>
+                                 </div>
+                                 <div class="catalog-item__color">
+                                    <div class="circle--black js-active is-active"></div>
+                                    <div class="circle--red js-active"></div>
+                                 </div>
+                                 <div class="catalog-item__price">
+                                    <div class="catalog-item__price--old">4990 р.</div>
+                                    <div class="catalog-item__price--new">2990 р.</div>
+                                 </div>
+                                 <div class="catalog-item__btn js-popup">
+                                    <button>заказать</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer" id="footer">
+         <div class="container">
+            <div class="footer__title title">КАК закзать?</div>
+            <div class="footer__list">
+
+               <div class="footer__item footer-item">
+                  <div class="footer-item__inner">
+                     <div class="footer-item__img">
+                        <img src="img/order/item1.png" alt="">
+                        <span class="circle"><span></span></span>
+                     </div>
+                     <div class="footer-item__text">Вы оформляете заказ на нашем сайте</div>
+                  </div>
+               </div>
+
+               <div class="footer__item footer-item">
+                  <div class="footer-item__inner">
+                     <div class="footer-item__img">
+                        <img src="img/order/item2.png" alt="">
+                        <span class="circle"></span>
+                     </div>
+                     <div class="footer-item__text">Менеджр перезвонит для уточнения деталей заказа</div>
+                  </div>
+               </div>
+
+               <div class="footer__item footer-item">
+                  <div class="footer-item__inner">
+                     <div class="footer-item__img">
+                        <img src="img/order/item3.png" alt="">
+                        <span class="circle"></span>
+                     </div>
+                     <div class="footer-item__text">В блежайшее время отправляем ваш заказ</div>
+                  </div>
+               </div>
+
+               <div class="footer__item footer-item">
+                  <div class="footer-item__inner">
+                     <div class="footer-item__img">
+                        <img src="img/order/item4.png" alt="">
+                        <span class="circle"></span>
+                     </div>
+                     <div class="footer-item__text">Вы оплачиваете заказ при получении</div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </footer>
+
+
+      <!-- popup -->
+      <div class="popup__overlay">
+         <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup-inner">
+               <div class="popup__img popup-block">
+                  <img src="img/catalog/item1.jpg" alt="">
+               </div>
+               <div class="popup__info popup-block">
+                  <div class="popup__name">Портупея “Джони Миллер”</div>
+                  <div class="popup__price">
+                     <div class="popup__price--old catalog-item__price--old">4990 р.</div>
+                     <div class="popup__price--new catalog-item__price--new">2990 р.</div>
+                  </div>
+                  <form>
+                     <div class="popup-form__inner">
+                        <div class="popup-form__label">
+                           <select name="" id="">
+                              <option value="XS">XS</option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                              <option value="XL">XL</option>
+                              <option value="XXL">XLL</option>
+                           </select>
+                        </div>
+                        <label class="popup-form__label">
+                           <input type="text" name="name" class="popup-form__input" placeholder="Введите веше имя">
+                        </label>
+                        <label class="popup-form__label">
+                           <input type="text" name="phone" class="popup-form__input js-phone" placeholder="Введите веш телефон">
+                        </label>
+                        <label class="popup-form__label catalog-item__btn">
+                           <button>Формить заказ</button>
+                        </label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/common.js"></script>
+</body>
+</html>
